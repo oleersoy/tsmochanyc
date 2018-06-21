@@ -1,5 +1,5 @@
 
-import { hello } from './hello';
+import { hello } from 'tsmochanyc/hello';
 import { expect } from 'chai';
 import 'mocha';
 
