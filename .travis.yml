@@ -12,6 +12,6 @@ deploy:
   on:
     branch: master
  before_deploy:
-  - npm run test    
   - sed -i '/.nyc_output/d' .gitignore
   - sed -i '/coverage/d' .gitignore
+  - npm test    
