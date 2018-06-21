@@ -1,0 +1,46 @@
+{
+  "name": "tsmochanyc",
+  "version": "1.0.0",
+  "description": "Sample project for Typescript, Mocha, and Istanbul using [ts-node](https://www.npmjs.com/package/ts-node).",
+  "main": "index.js",
+  "scripts": {
+    "unit-test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "test": "nyc mocha"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html"
+    ],
+    "all": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleersoy/tsmochanyc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleersoy/tsmochanyc/issues"
+  },
+  "homepage": "https://github.com/oleersoy/tsmochanyc#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.2",
+    "@types/node": "^10.3.4",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "istanbul": "^0.4.5",
+    "source-map-support": "^0.5.6",
+    "ts-node": "^6.1.2",
+    "typescript": "^2.9.2"
+  }
+}
